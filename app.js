@@ -14,7 +14,7 @@ server.use(restify.authorizationParser());
 
 function respond(req, res, next) {
 	if(req.user) {
-		res.send(200, "Authenticated!");
+		res.send(200, req.user);
 	} else {
 		res.send('hello ' + req.params.name);
 	}

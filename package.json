@@ -9,6 +9,7 @@
 	"mocha": "*",
 	"chai": "*",
 	"passport": "*",
+	"passport-facebook-token": "*",
 	"passport-http": "*",
 	"bcrypt-nodejs": "*",
 	"validator": "*",
