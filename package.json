@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+	"restify": "*",
+	"mongodb": "*",
+	"mongoose": "*",
+	"mocha": "*",
+	"chai": "*",
+	"passport": "*",
+	"passport-http": "*",
+	"bcrypt-nodejs": "*",
+	"validator": "*",
+	"dateformat": "*",
+	"supertest": "*"
+  }, 
+  "scripts": {
+	"test": "mocha"
+  }
+}
+
