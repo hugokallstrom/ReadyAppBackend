@@ -12,12 +12,17 @@ server.use(passport.initialize());
 server.use(restify.bodyParser());
 server.use(restify.authorizationParser());
 
+passport.serializeUser(function(user, done) {
+		  done(null, user);
+});
+
+passport.deserializeUser(function(user, done) {
+		  done(null, user);
+});
+
 function respond(req, res, next) {
-	if(req.user) {
-		res.send(200, req.user);
-	} else {
-		res.send('hello ' + req.params.name);
-	}
+		console.log("user: " + req.user);
+		res.send(200, { user: req.user} );
 }
 
 server.get('/', respond);
